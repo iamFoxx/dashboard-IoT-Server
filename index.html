@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <title>Plataforma IoT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <meta name="description" content="Exemplo de Dashboard desenvolvido com recurso à framework Bootstrap">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Dashboard EI-TI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Histórico</a>
+        </li>
+      </ul>
+      <a href="#" class="btn btn-outline-secondary">Logout</a>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>Servidor IoT</h1>
+      <p>Tecnologias de Internet - Engenharia Informática</p>
+    </div>
+  </div>
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card text-center">
+          <div class="card-header">
+            <strong>Luminosidade: 80%</strong>
+          </div>
+          <div class="card-body">
+            <a href="#"> <img src="./img/dia.png" alt="Luminosidade">
+          </div>
+          <div class="card-footer"><small class="text-muted">Atualização 2020/03/01 14:31 - <a href="#">Histórico</a>
+            </small></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card text-center">
+          <div class="card-header">
+            <strong>Temperatura: 22º</strong>
+          </div>
+          <div class="card-body">
+            <img src="./img/temperature.png" alt="Temperatura">
+          </div>
+          <div class="card-footer"><small class="text-muted">Atualização 2020/03/01 14:31 - <a href="#">Histórico</a>
+            </small></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card text-center">
+          <div class="card-header">
+            <strong>Porta: Fechada</strong>
+          </div>
+          <div class="card-body">
+            <img src="./img/door.png" alt="Porta">
+          </div>
+          <div class="card-footer"><small class="text-muted">Atualização 2020/03/01 14:31 - <a href="#">Histórico</a>
+            </small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="card-header">
+        <strong>Tabela de Sensores </strong>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Tipo de Dispositivo IoT</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Data de Atualização</th>
+                <th scope="col">Estado Alertas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sensor de Luz</td>
+                <td>1000</td>
+                <td>2020/03/01 14:31</td>
+                <td><span class="badge badge-pill badge-success">Ativo</span></td>
+              </tr>
+              <tr>
+                <td>Temperatura</td>
+                <td>22º</td>
+                <td>2020/03/01 14:31</td>
+                <td><span class="badge badge-pill badge-secondary">Desativo</span></td>
+              </tr>
+              <tr>
+                <td>Humidade</td>
+                <td>85%</td>
+                <td>2020/03/01 14:31</td>
+                <td><span class="badge badge-pill badge-warning">Warning</span></td>
+              </tr>
+              <tr>
+                <td>Luminosidade</td>
+                <td>80%</td>
+                <td>2020/03/01 14:31</td>
+                <td><span class="badge badge-pill badge-danger">Muito Forte</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-5">
+    <small class="text-muted">&copy; Servidor IoT - Engenharia Informática</small></footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
